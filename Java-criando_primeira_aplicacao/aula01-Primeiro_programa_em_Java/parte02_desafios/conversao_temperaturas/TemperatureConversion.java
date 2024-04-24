@@ -19,7 +19,7 @@ public class TemperatureConversion
     {
         double  tempCelsius;
         double  tempFahrenheit;
-        double  intFahrenheit;
+        int  intFahrenheit;
         Scanner teclado;
         String  mensagem;
 
@@ -29,6 +29,6 @@ public class TemperatureConversion
         tempFahrenheit = (tempCelsius * 1.8) + 32;
         intFahrenheit = (int)Math.round(tempFahrenheit);
         System.out.printf("Temperatura em Fahrenheit: %.2fºF\n", tempFahrenheit);
-        System.out.println("Temp Fahrenheit - s/casas decimais: " + String.format("%.0f", intFahrenheit) + "ºF");
+        System.out.printf("Temp Fahrenheit - s/casas decimais: %dºF\n", intFahrenheit);
     }
 }
