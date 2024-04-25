@@ -1,8 +1,14 @@
 /*
+**  BRAZILIAN PORTUGUESE:
 **      1. Crie um programa que realize a média de duas notas decimais e exiba o resultado.
-**      2. Declare uma variável do tipo double e uma variável do tipo int. Faça o casting da variável
-**      double para int e imprima o resultado.
-* */
+**      2. Declare uma variável do tipo double e uma variável do tipo int.
+**         Faça o casting da variável double para int e imprima o resultado.
+**
+**  ENGLISH:
+**      1. Create a program that calculates the average of two decimal grades and displays the result.
+**      2. Declare a variable of type double and an integer variable.
+**         Cast the double variable to int and print the result
+*/
 
 import java.util.Scanner;
 
