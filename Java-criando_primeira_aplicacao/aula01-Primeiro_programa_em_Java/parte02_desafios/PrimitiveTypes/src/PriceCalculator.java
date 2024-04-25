@@ -1,7 +1,13 @@
 /*
-**  Declare uma variável do tipo double precoProduto e uma variável do tipo int (quantidade).
-**  Calcule o valor total multiplicando o preço do produto pela quantidade e apresente o
-**  resultado em uma mensagem.
+**  BRAZILIAN PORTUGUESE:
+**      Declare uma variável do tipo double precoProduto e uma variável do tipo int (quantidade).
+**      Calcule o valor total multiplicando o preço do produto pela quantidade e apresente o
+**      resultado em uma mensagem.
+**
+**  ENGLISH:
+**      Declare a variable of type double productPrice and an integer variable (quantity).
+**      Calculate the total value by multiplying the product price by the quantity and
+**      display the result in a message.
 */
 
 import java.util.Scanner;;
