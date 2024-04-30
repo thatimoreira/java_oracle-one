@@ -32,6 +32,16 @@ public class Main {
         car1.calculateCarAge();
         car1.displayTechnicalSheet();
 
+        System.out.print("\n---------------- STUDENT CLASS ----------------\n");
+        Student student1 = new Student();
+
+        scanner = new Scanner(System.in);
+        System.out.print("Name: ");
+        String  name = scanner.next();
+        System.out.print("Age: ");
+        int     age = scanner.nextInt();
+        student1.displayStudentInformation(name, age);
+
         scanner.close();
     }
 }
