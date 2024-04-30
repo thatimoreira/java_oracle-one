@@ -24,7 +24,6 @@ public class Car {
         scanner = new Scanner(System.in);
         System.out.print("Please, inform the current year: ");
         currentYear = scanner.nextInt();
-        scanner.close();
         carAge = currentYear - modelYear;
         return (carAge);
     }
