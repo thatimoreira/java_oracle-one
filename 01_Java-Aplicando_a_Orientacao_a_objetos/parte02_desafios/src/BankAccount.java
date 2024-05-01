@@ -1,5 +1,3 @@
-package br.com.alura.javafundamentals.parte02;
-
 public class BankAccount {
     private int     accountNumber;
     private double  balance;
