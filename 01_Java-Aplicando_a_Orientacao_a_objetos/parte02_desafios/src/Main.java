@@ -1,6 +1,7 @@
 import br.com.alura.javafundamentals.part02.BankAccount;
 import br.com.alura.javafundamentals.part02.PersonAge;
 import br.com.alura.javafundamentals.part02.Product;
+import br.com.alura.javafundamentals.part02.Student;
 
 public class Main {
     public static void main(String[] args) {
@@ -32,6 +33,16 @@ public class Main {
         product1.setProductName("Chinelo");
         product1.setPrice(25.90);
         product1.showProductDetails();
-        System.out.printf("Discounted price: R$%.2f", product1.applyDiscount(15));
+        System.out.printf("Discounted price: R$%.2f\n", product1.applyDiscount(15));
+
+        System.out.println("\n-------------- STUDENT --------------");
+        Student student1 = new Student();
+        student1.setName("Marcos de Barros");
+        student1.setGrade1(9.8);
+        student1.setGrade2(8.75);
+        student1.setGrade3(7.5);
+        student1.setGrade4(6.9);
+        student1.calculateAverage();
+        student1.displayStudentInfo();
     }
 }
