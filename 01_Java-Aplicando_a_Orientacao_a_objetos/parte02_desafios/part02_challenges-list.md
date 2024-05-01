@@ -16,9 +16,9 @@ Praticando conceitos de modificadores de acesso public e private, import, this, 
 
 "Practicing public and private, import, this, getters and setters access modifiers concepts.
 
-1. Create a `BankAccount` class with the following fields: accountNumber (private), balance (private), and accountHolder (public). Implement getters and setters methods for the private fields.
+1. Create a `br.com.alura.javafundamentals.part02.BankAccount` class with the following fields: accountNumber (private), balance (private), and accountHolder (public). Implement getters and setters methods for the private fields.
 
-2. Create a `PersonAge`  classwith private fields name and age. Use getters and setters methods to access and modify these fields. Add a method `checkAge` that prints whether the person is of legal age or not.
+2. Create a `br.com.alura.javafundamentals.part02.PersonAge`  classwith private fields name and age. Use getters and setters methods to access and modify these fields. Add a method `checkAge` that prints whether the person is of legal age or not.
 
 3. Develop a `Product` class with private fields name and price. Use getters and setters methods to access and modify these fields. Add a method `applyDiscount` that receives a percentage value and reduces the product's price.
 
