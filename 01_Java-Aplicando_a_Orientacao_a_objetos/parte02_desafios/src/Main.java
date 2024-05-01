@@ -1,7 +1,4 @@
-import br.com.alura.javafundamentals.part02.BankAccount;
-import br.com.alura.javafundamentals.part02.PersonAge;
-import br.com.alura.javafundamentals.part02.Product;
-import br.com.alura.javafundamentals.part02.Student;
+import br.com.alura.javafundamentals.part02.*;
 
 public class Main {
     public static void main(String[] args) {
@@ -44,5 +41,11 @@ public class Main {
         student1.setGrade4(6.9);
         student1.calculateAverage();
         student1.displayStudentInfo();
+
+        System.out.println("\n--------------- BOOK ---------------");
+        Book    book1 = new Book();
+        book1.setTitle("O Espírito da Intimidade");
+        book1.setAuthor("Sobonfu Somé");
+        book1.displayDetails();
     }
 }
