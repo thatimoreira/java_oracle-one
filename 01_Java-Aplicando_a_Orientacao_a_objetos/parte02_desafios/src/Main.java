@@ -1,5 +1,6 @@
 import br.com.alura.javafundamentals.part02.BankAccount;
 import br.com.alura.javafundamentals.part02.PersonAge;
+import br.com.alura.javafundamentals.part02.Product;
 
 public class Main {
     public static void main(String[] args) {
@@ -12,7 +13,7 @@ public class Main {
         System.out.printf("Account Holder: %s\n", account1.accountHolder);
         System.out.printf("Balance.......: R$%.2f\n", account1.getBalance());
 
-        System.out.println("\n------------ PERSON AGE ------------");
+        System.out.println("\n------------- PERSON AGE -----------");
         PersonAge   person1 = new PersonAge();
         PersonAge   person2 = new PersonAge();
         PersonAge   person3 = new PersonAge();
@@ -25,5 +26,12 @@ public class Main {
         person3.setName("Nathalia");
         person3.setAge(17);
         person3.checkAge(person3.getAge());
+
+        System.out.println("\n-------------- PRODUCT --------------");
+        Product product1 = new Product();
+        product1.setProductName("Chinelo");
+        product1.setPrice(25.90);
+        product1.showProductDetails();
+        System.out.printf("Discounted price: R$%.2f", product1.applyDiscount(15));
     }
 }
