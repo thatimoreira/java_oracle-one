@@ -1,3 +1,5 @@
+package br.com.alura.javafundamentals.part02;
+
 public class BankAccount {
     private int     accountNumber;
     private double  balance;
@@ -7,7 +9,7 @@ public class BankAccount {
         return accountNumber;
     }
 
-    public void setAccountNumber(int accountNumber) {
+    public void setAccountNumber(int accountNumber){
         this.accountNumber = accountNumber;
     }
 
