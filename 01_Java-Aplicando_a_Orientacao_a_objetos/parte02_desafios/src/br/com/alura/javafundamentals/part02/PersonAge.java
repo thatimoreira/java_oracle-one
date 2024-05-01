@@ -26,7 +26,7 @@ public class PersonAge {
     public void checkAge(int age){
         if (age >= 18){
             System.out.printf("%s is of legal age.\n", name);
-        } else if (age >= 0) {
+        } else {
             System.out.printf("%s is underage.\n", name);
         }
     }
