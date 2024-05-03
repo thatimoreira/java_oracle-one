@@ -1,4 +1,4 @@
-import br.com.alura.course02.part03challenges.models.CarModel;
+import br.com.alura.course02.part03challenges.models.car.CarModel;
 
 public class Main {
     public static void main(String[] args) {

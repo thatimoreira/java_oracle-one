@@ -1,4 +1,4 @@
-package br.com.alura.course02.part03challenges.models;
+package br.com.alura.course02.part03challenges.models.car;
 
 public class CarModel extends Car {
     private int trunkCapacityLiters;
