@@ -1,3 +1,5 @@
+import br.com.alura.course02.part03challenges.models.animal.Cat;
+import br.com.alura.course02.part03challenges.models.animal.Dog;
 import br.com.alura.course02.part03challenges.models.car.CarModel;
 
 public class Main {
@@ -14,5 +16,23 @@ public class Main {
         System.out.printf("Lowest price : R$%.2f\n", tiggo7ProHybMaxDr.calculateLowestPrice());
         System.out.printf("Highest price: R$%.2f\n", tiggo7ProHybMaxDr.calculateHighestPrice());
         System.out.println("- - - - - - - - - - - - - - - - - - - - - -");
+
+        System.out.println("\n----------------- ANIMAL -----------------");
+        Dog maya = new Dog();
+        maya.setAnimalName("Maya");
+        maya.setColor("solid yellow");
+        maya.setDogBreed("Belgian Shepherd Malinois");
+        maya.showAnimalInfos();
+        maya.makeSound();
+        maya.wagTail();
+
+        System.out.println();
+
+        Cat cleo = new Cat();
+        cleo.setAnimalName("Cleo");
+        cleo.setColor("black");
+        cleo.showAnimalInfos();
+        cleo.makeSound();
+        cleo.scratchFurniture();
     }
 }
