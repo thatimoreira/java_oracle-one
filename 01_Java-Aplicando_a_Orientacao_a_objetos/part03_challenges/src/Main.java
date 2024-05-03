@@ -1,5 +1,7 @@
 import br.com.alura.course02.part03challenges.models.animal.Cat;
 import br.com.alura.course02.part03challenges.models.animal.Dog;
+import br.com.alura.course02.part03challenges.models.bankaccount.BankAccount;
+import br.com.alura.course02.part03challenges.models.bankaccount.CheckingAccount;
 import br.com.alura.course02.part03challenges.models.car.CarModel;
 
 public class Main {
@@ -34,5 +36,22 @@ public class Main {
         cleo.showAnimalInfos();
         cleo.makeSound();
         cleo.scratchFurniture();
+
+        System.out.println("\n--------------------- BANK ---------------------");
+        CheckingAccount account1 = new CheckingAccount();
+        account1.setAgencyNumber(2236);
+        account1.setAccountNumber(37895234);
+        account1.setAccountOwner("John Doe");
+        account1.displayAccountInfo();
+        account1.withdraw(2000);
+        account1.deposit(1500);
+        account1.checkBalance();
+        account1.withdraw(725);
+        account1.chargeMonthlyFee();
+        account1.deposit(-1);
+        account1.withdraw(-5);
+        account1.checkBalance();
+
+
     }
 }
