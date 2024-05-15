@@ -1,5 +1,8 @@
 import br.com.alura.part04.currencyconverter.CurrencyConverter;
+import br.com.alura.part04.multiplicationtable.MultiplicationTable;
 import br.com.alura.part04.rectangularroomcalculator.RectangularRoomCalculator;
+
+import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args) {
@@ -25,5 +28,7 @@ public class Main {
         System.out.printf("Perimeter = %.2fm\n", perimeter);
 
         System.out.println("\n------  MULTIPLICATION TABLE ------");
+        MultiplicationTable table = new MultiplicationTable();
+        table.showMultiplicationTable(9);
     }
 }
