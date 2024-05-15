@@ -1,6 +1,7 @@
 import br.com.alura.part04.currencyconverter.CurrencyConverter;
 import br.com.alura.part04.multiplicationtable.MultiplicationTable;
 import br.com.alura.part04.rectangularroomcalculator.RectangularRoomCalculator;
+import br.com.alura.part04.temperatureconverter.StandardTemperatureConverter;
 
 import java.util.Scanner;
 
@@ -27,8 +28,23 @@ public class Main {
         System.out.printf("Area = %.2fm²\n", area);
         System.out.printf("Perimeter = %.2fm\n", perimeter);
 
-        System.out.println("\n------  MULTIPLICATION TABLE ------");
+        System.out.println("\n------- MULTIPLICATION TABLE ------");
         MultiplicationTable table = new MultiplicationTable();
         table.showMultiplicationTable(9);
+
+        System.out.println("\n------ TEMPERATURE CONVERTER ------");
+        StandardTemperatureConverter tempConverter = new StandardTemperatureConverter();
+        double  celsiusTemp = 38.9;
+        double fahrenheitTemp = tempConverter.celsiusToFahrenheit(celsiusTemp);
+        System.out.println(" _______________ _______________");
+        System.out.println("|    Celsius    ->  Fahrenheit  |");
+        System.out.printf("|    %.2fºC    |    %.2fF    |\n", celsiusTemp, fahrenheitTemp);
+        System.out.println(" =============== =============== ");
+        fahrenheitTemp = 25.3;
+        celsiusTemp = tempConverter.fahrenheitToCelsius(fahrenheitTemp);
+        System.out.println("|   Fahrenheit  ->   Celsius    |");
+        System.out.printf("|    %.2fF     |    %.2fºC    |\n", fahrenheitTemp, celsiusTemp);
+        System.out.println(" _______________ _______________ ");
+
     }
 }
