@@ -1,5 +1,7 @@
 import br.com.alura.part04.currencyconverter.CurrencyConverter;
 import br.com.alura.part04.multiplicationtable.MultiplicationTable;
+import br.com.alura.part04.productpricecalculator.Book;
+import br.com.alura.part04.productpricecalculator.PhysicalProduct;
 import br.com.alura.part04.rectangularroomcalculator.RectangularRoomCalculator;
 import br.com.alura.part04.temperatureconverter.StandardTemperatureConverter;
 
@@ -46,5 +48,24 @@ public class Main {
         System.out.printf("|    %.2fF     |    %.2fºC    |\n", fahrenheitTemp, celsiusTemp);
         System.out.println(" _______________ _______________ ");
 
+        System.out.println("\n-------- PRICE CALCULATOR --------");
+        Book book = new Book();
+        book.setBookTitle("The Spirity of intimacy");
+        double bookPrice = 79.90;
+        double bookDiscount = 10;
+        int    bookQuantity = 1;
+        double bookFinalPrice = bookQuantity * book.calculateFinalPrice(bookPrice, bookDiscount);
+        PhysicalProduct physicalProduct = new PhysicalProduct();
+        physicalProduct.setProductName("Long Dress");
+        double productPrice = 120;
+        double productDiscount = 5;
+        int    productQuantity = 3;
+        double productFinalPrice = productQuantity * physicalProduct.calculateFinalPrice(productPrice, productDiscount);
+        System.out.println("Qty.   Description                UnPrice   Disc.   TotalPrice");
+        System.out.printf(" %d     '%s'  R$%.2f   %.2f%%  R$%.2f\n",
+                bookQuantity, book.getBookTitle(), bookPrice, bookDiscount, bookFinalPrice);
+        System.out.printf(" %d     '%s'               R$%.2f   %.2f%%  R$%.2f\n",
+                productQuantity, physicalProduct.getProductName(), productPrice, productDiscount, productFinalPrice);
+        System.out.printf("TOTAL:............................................. R$%.2f\n", bookFinalPrice + productFinalPrice);
     }
 }
