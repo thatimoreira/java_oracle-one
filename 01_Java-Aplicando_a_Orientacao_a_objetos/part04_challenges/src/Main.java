@@ -1,5 +1,7 @@
 import br.com.alura.part04.currencyconverter.CurrencyConverter;
 import br.com.alura.part04.multiplicationtable.MultiplicationTable;
+import br.com.alura.part04.productandservicepricecalculator.Product;
+import br.com.alura.part04.productandservicepricecalculator.Service;
 import br.com.alura.part04.productpricecalculator.Book;
 import br.com.alura.part04.productpricecalculator.PhysicalProduct;
 import br.com.alura.part04.rectangularroomcalculator.RectangularRoomCalculator;
@@ -48,7 +50,7 @@ public class Main {
         System.out.printf("|    %.2fF     |    %.2fºC    |\n", fahrenheitTemp, celsiusTemp);
         System.out.println(" _______________ _______________ ");
 
-        System.out.println("\n-------- PRICE CALCULATOR --------");
+        System.out.println("\n-------------------------------- PRICE CALCULATOR --------------------------------");
         Book book = new Book();
         book.setBookTitle("The Spirity of intimacy");
         double bookPrice = 79.90;
@@ -67,5 +69,22 @@ public class Main {
         System.out.printf(" %d     '%s'               R$%.2f   %.2f%%  R$%.2f\n",
                 productQuantity, physicalProduct.getProductName(), productPrice, productDiscount, productFinalPrice);
         System.out.printf("TOTAL:............................................. R$%.2f\n", bookFinalPrice + productFinalPrice);
+
+        System.out.println("\n-------- PRODUCT and SERVICE PRICE CALCULATOR --------");
+        Service service = new Service();
+        service.setServiceName("Pipe repair");
+        service.setServicePrice(130);
+        service.setHours(4);
+        double  serviceFinalPrice = service.calculateProductTotalPrice(service.getHours());
+        Product product = new Product();
+        product.setProductName("Weldable Pipe 6m");
+        product.setProductPrice(18.32);
+        product.setQuantity(14);
+        double  productFinPrice = product.calculateProductTotalPrice(product.getQuantity());
+        System.out.println("Type    Qty/Hours   Description         UnPrice   TotalPrice");
+        System.out.printf("%s     %d       '%s'       R$%.2f  R$%.2f\n", service.getType(), service.getHours(),
+                            service.getServiceName(), service.getServicePrice(), serviceFinalPrice);
+        System.out.printf("%s    %d       '%s'  R$%.2f   R$%.2f\n", product.getType(), product.getQuantity(),
+                product.getProductName(), product.getProductPrice(), productFinPrice);
     }
 }
