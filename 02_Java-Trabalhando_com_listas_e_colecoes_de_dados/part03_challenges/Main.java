@@ -58,6 +58,24 @@ public class Main {
             System.out.printf("Área: %.2f\n", forma.calcularArea());
         }
 
+        System.out.println("--------------------------------------------");
+        
+        ContaBancaria maria = new ContaBancaria(123456, "Maria", 5090.70);
+        ContaBancaria joao = new ContaBancaria(654321, "João", 1000.00);
+        ContaBancaria cacau = new ContaBancaria(987654, "Cacau", 10900.81);
 
+        ArrayList<ContaBancaria> listaDeContas = new ArrayList<>();
+        listaDeContas.add(maria);
+        listaDeContas.add(joao);
+        listaDeContas.add(cacau);
+
+        ContaBancaria contaMaiorSaldo = listaDeContas.get(0);
+        for (ContaBancaria conta : listaDeContas) {
+            if (conta.getSaldo() > contaMaiorSaldo.getSaldo()) {
+                contaMaiorSaldo = conta;
+            }
+        }
+        System.out.printf("A conta com maior saldo é de: %s\n", contaMaiorSaldo.getNomeTitular());
+        System.out.printf("Saldo: R$%.2f\n", contaMaiorSaldo.getSaldo());
     }
 }
