@@ -15,7 +15,11 @@ public class Main {
             System.out.println(item);
         }
 
-        Cachorro myCachorro = new Cachorro("Totó");
-        Animal animal = (Animal)myCachorro;
+        Animal animal = new Cachorro("Totó");
+        if (animal instanceof Cachorro) {
+            Cachorro cachorro = (Cachorro)animal;
+        } else {
+            System.out.println("Objeto não é do tipo Cachorro.");
+        }
     }
 }
