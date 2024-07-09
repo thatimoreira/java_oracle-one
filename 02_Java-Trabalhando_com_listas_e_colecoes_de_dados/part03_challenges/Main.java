@@ -44,5 +44,20 @@ public class Main {
 
         double precoMedio = somaPrecos / listaDeProdutos.size();
         System.out.printf("Preço médio dos produtos: R$%.2f\n", precoMedio);
+
+        System.out.println("--------------------------------------------");
+
+        Circulo circulo = new Circulo(5);
+        Quadrado quadrado = new Quadrado(3);
+
+        ArrayList<Forma> formas = new ArrayList<>();
+        formas.add(circulo);
+        formas.add(quadrado);
+
+        for (Forma forma : formas) {
+            System.out.printf("Área: %.2f\n", forma.calcularArea());
+        }
+
+
     }
 }
