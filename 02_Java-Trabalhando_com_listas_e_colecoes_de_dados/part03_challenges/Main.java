@@ -14,5 +14,8 @@ public class Main {
         for (String item : stringsList) {
             System.out.println(item);
         }
+
+        Cachorro myCachorro = new Cachorro("Totó");
+        Animal animal = (Animal)myCachorro;
     }
 }
