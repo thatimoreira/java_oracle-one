@@ -33,18 +33,19 @@ public class Main {
             System.out.println(title.getName());
         }
 
-        System.out.println("\n-------     Exercise 4     -------");
-        List<String> listArrayList = new ArrayList<>();
-        listArrayList.add("1st item");
-        listArrayList.add("2nd item");
-        listArrayList.add("3rd item");
+        System.out.println("\n-------     Exercise 5     -------");
+        List<String> polymorphicList;
+
+        polymorphicList = new ArrayList<>();
+        polymorphicList.add("1st item");
+        polymorphicList.add("2nd item");
+        polymorphicList.add("3rd item");
+        System.out.println("ArrayList: " + polymorphicList);
         
-        List<String> listLinkedList = new LinkedList<>();
-        listLinkedList.add("Element A");
-        listLinkedList.add("Element B");
-        listLinkedList.add("Element C");
-        
-        System.out.println("ArrayList: " + listArrayList);
-        System.out.println("LinkedList: " + listLinkedList);
+        polymorphicList = new LinkedList<>();
+        polymorphicList.add("Element A");
+        polymorphicList.add("Element B");
+        polymorphicList.add("Element C");
+        System.out.println("LinkedList: " + polymorphicList);
     }
 }
