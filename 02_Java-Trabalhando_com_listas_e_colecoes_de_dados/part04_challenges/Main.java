@@ -16,5 +16,19 @@ public class Main {
         Collections.sort(integerNbrsList);
 
         System.out.println("Sorted list: " + integerNbrsList);
+
+        System.out.println("\n------- Exercises 2 and 3 -------");
+        ArrayList<Title> titlesList = new ArrayList<>();
+        titlesList.add(new Title("Qualquer coisa"));
+        titlesList.add(new Title("Outra coisa"));
+        titlesList.add(new Title("Nada aqui"));
+        titlesList.add(new Title("Acolá"));
+        titlesList.add(new Title("Tudo bem?"));
+
+        Collections.sort(titlesList);
+
+        for (Title title : titlesList) {
+            System.out.println(title.getName());
+        }
     }
 }

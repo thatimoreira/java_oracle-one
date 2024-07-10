@@ -7,8 +7,12 @@ public class Title implements Comparable<Title>{
         this.name = name;
     }
 
+    public String getName() {
+        return name;
+    }    
+
     @Override
     public int compareTo(Title otherTitle) {
-        return this.name.compareTo(otherTitle.name);
+        return this.getName().compareTo(otherTitle.getName());
     }
 }
